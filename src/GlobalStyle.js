@@ -94,10 +94,11 @@ ${"" /* resuable code section  */}
   gap: 9rem;
 }
 
+${'' /* repeat means two column with same distance */}
 .grid-two-column {
-  grid-template-columns: repeat(2, 1fr);
-
+  grid-template-columns: repeat(2, 1fr);  
 }
+
 
 .grid-three-column {
   grid-template-columns: repeat(3, 1fr);
@@ -157,7 +158,7 @@ input, textarea{
     cursor: pointer;
     }
 
-@media (max-width: ${({ theme }) => theme.media.tab}) {
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
     padding: 0 3.2rem;
